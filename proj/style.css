@@ -1,0 +1,61 @@
+body {
+    background-image: url(https://i.pinimg.com/564x/c8/ad/b6/c8adb69f4c04361805a813c3a6aa44c6.jpg);
+    /* Set the background image */
+  background-size: cover; /* Ensure the background image covers the entire body */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Cen  ter the background image */
+    color: #100202; /* Set text color to a dark shade */
+    font-family: 'Arial', sans-serif; /* Font style */
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    min-height: 100vh; /* Ensure body fills the viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for navigation */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: #f2eaea; /* White text color */
+    padding: 10px 10px; /* Add padding */
+    margin: 0 10px; /* Add margin */
+    font-size: 24px; /* Larger font size */
+}
+
+/* Style for main content */
+main {
+    flex-grow: 1; /* Allow main content to grow to fill remaining space */
+    padding: 20px;
+}
+
+/* Style for footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(192, 106, 56); /* Black background color */
+}
+
+.navbar {
+    background-color: #222; /* Dark background color */
+    padding-bottom: 16px; /* Increased padding */
+    height: 40px; /* Fixed height */
+}
+
+.library-info {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 20px;
+    margin: 80px auto; /* Center the library info */
+    max-width: 700px; /* Limit the width of the library info */
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+}

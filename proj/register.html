@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>new registration</title>
+<style>
+  body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem; /* Equivalent to 30px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Align items in a column */
+    background-image: url(https://i.pinimg.com/564x/63/0a/3c/630a3ceb67061035cac87ecb3464af8a.jpg);
+    background-size: cover; /* Ensure the background image covers the entire body */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align container content */
+  }
+
+  p {
+    color: #050000; /* Dark gray */
+    font-size: 1.25rem; /* Equivalent to 25px */
+  }
+
+  form {
+    /* Increased width of the form */
+     /* Changed border color to black */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f2f2f2; /* Light gray background */
+    border: 4px solid #4d4d4d; /* Dark gray */
+    width: 410px;
+    height: 590px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left:-2%;
+    margin-right: 3%;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #9b501e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #02182e;
+  }
+
+  .demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+</style>
+</head>
+<body>
+   <div class="demo"> 
+   
+<form action="reg-process.jsp" method="post" name="myform">
+    <h3>Registration Form</h3>  
+ <input type="text"  placeholder="First name" name="fname" autoComplete="off" required /><br>
+ <input type="text" placeholder="Last name" name="lname" autoComplete="off" required /><br>
+ <input type="text" placeholder="Email ID" name="email"  autoComplete="off" required/><br>
+
+ <input type="text" onBlur="verifyUserName()" required placeholder="User name" name="userid" autoComplete="off" /><br>
+<span id="demo"></span>
+<input type="password" placeholder="password" required name="password" autoComplete="off"/><br>
+<button>Register</button><br/>
+<p>If already Registered, <a href="Login.html">Login</a></p>
+</form>
+</div>
+<script>
+    function verifyUserName()
+    {  
+      document.getElementById("demo").innerHTML = "hi";
+    }
+</script>
+</body>
+</html>

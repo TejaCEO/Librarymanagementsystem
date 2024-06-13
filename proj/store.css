@@ -1,0 +1,17 @@
+/* Set background color of the whole page to blue */
+body {
+    background-image:url(https://i.pinimg.com/564x/ab/fd/09/abfd096e71536c1fd9c48d187ab7b77a.jpg);
+    background-size: cover; /* Ensure the background image covers the entire body */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center;
+}
+
+/* Style for the HTML table */
+
+/* Style for the HTML table */
+table {
+    width: 60%; /* Set the width to 60% of the viewport */
+    margin-left: 20%; /* Set left margin to 30% of the viewport */
+    margin-right: 20%; /* Set right margin to 30% of the viewport */
+    background-color: white; /* Set table background color to white */
+}
